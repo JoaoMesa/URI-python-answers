@@ -1,0 +1,16 @@
+import math
+def calculaBhaskara():
+    num=input().split()
+    A,B,C= num
+    A=float(A)
+    B=float(B)
+    C=float(C)
+    Delta=(B*B)-(4*A*C)
+    if Delta<0 or A==0:
+        print("Impossivel calcular")
+    else:
+        R1=(-B+math.sqrt(Delta))/(2*A)
+        R2=(-B-math.sqrt(Delta))/(2*A)
+        print("R1 = %.5f" %R1)
+        print("R2 = %.5f" %R2)
+calculaBhaskara()
