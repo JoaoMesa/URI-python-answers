@@ -1,0 +1,9 @@
+#Considerando ano=365dias e mes=30dias
+age=int(input())
+y=int(age/365)
+m=age%365
+month=int(m/30)
+d=m%30
+print("%d ano(s)" %y)
+print("%d mes(es)" %month)
+print("%d dia(s)" %d)
